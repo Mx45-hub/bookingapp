@@ -61,6 +61,13 @@ public class bController {
     }
 
 
+    @GetMapping("/")
+    public String home() {
+        return "home"; // The name of your HTML form file without the extension
+    }
+
+
+    
     @GetMapping("/booking")
     public String showDateInputForm() {
         return "booking"; // The name of your HTML form file without the extension
